@@ -1,0 +1,283 @@
+<!doctype html>
+	<html lang="en">
+
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    		<title>Eco hub - Sitemap</title>
+
+			<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+			<link rel="stylesheet" href="style.css">
+			<style>
+
+				body{
+    				background-color: rgb(173, 233, 235);
+					height: auto;
+				}
+				/*changing the background color of the navigation bar according to the background color of the page*/
+				.navbar{
+					background-color: rgb(100, 211, 109);
+				}
+
+				svg{
+					width: auto;
+				}
+
+				/*changing the background color of the footer according to the background color of the page*/
+				.footer{
+					display: inline;
+					background-color: rgb(100, 211, 109);
+					height: 8px;
+				}
+
+				/*changing thecolor of the text inside the <a> tag in footer according to the background color of the page*/
+				.footer .footer-content a{
+					color: green;
+				}
+
+			</style>
+		</head>
+		
+		<body>
+
+			<!-- navigation bar -->
+			<div class="navbar">
+				<img src="images/logo.jpg" class="logo" alt="wesite logo - two green leaves with word 'Eco hub' and 'on earth one future'">
+				<nav>
+					<ul>
+						<li><a href="home.html">HOME</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="shop.html">SHOP</a></li>
+						<li><a href="profile.html">USER PROFILE</a></li>
+						<li><a href="feedback.html">FEEDBACK</a></li>
+						<li><a href="sitemap.html">SITEMAP</a></li>
+						<li><a href="team.html">TEAM</a></li>
+					</ul>
+				</nav>
+	        </div>
+		
+			<!-- svg sitemap -->
+			<svg id="sitemap">
+
+				<!-- Node for home page -->
+				<g id="homepage">
+					<title>Home</title>
+					<rect id="homeRect" x="570" y="40" rx="10px" ry="10px" height="50px" width ="150px"/>
+					<text x="645" y="70">Home</text>
+			  	</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="645" y1="90" x2="645" y2="150"/>
+				</g>
+
+				<g class="horizontalLine" >
+					<line x1="125" y1="150" x2="1075" y2="150" ></line>
+				</g>
+
+				<g class="line">
+					<line x1="125" y1="150" x2="125" y2="250"/>
+				</g>
+
+				<!-- Node for gallery page-->
+				<g id="gallerypage">
+					<title>Gallery</title>
+					<rect id="galleryRect" x="65" y="250" rx="10px" ry="10px" height="50px" width ="120px"/>
+					<text x="125" y="280">Gallery</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="315" y1="150" x2="315" y2="250"/>
+				</g>
+
+				<!-- Node for shop page-->
+				<g id="shop">
+					<title>Shop</title>
+					<rect id="shopRect" x="255" y="250" rx="10px" ry="10px" height="50px" width ="120px"/>
+					<text x="315" y="280">Shop</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="505" y1="150" x2="505" y2="250"/>
+				</g>
+
+				<!-- Node for user profile page -->
+				<g id="userProfile">
+					<title>User profile</title>
+					<rect id="userProfileRect" x="445" y="250" rx="10px" ry="10px" height="50px" width ="120px"/>
+					<text x="505" y="280">User profile</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="695" y1="150" x2="695" y2="250"/>
+				</g>
+
+				<!-- Node for feedback page -->
+				<g id="feedback">
+					<title>Feedback</title>
+					<rect id="feedbackRect" x="635" y="250" rx="10px" ry="10px" height="50px" width ="120px"/>
+					<text x="695" y="280">Feedback</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="885" y1="150" x2="885" y2="250"/>
+				</g>
+
+				<!-- Node for team page -->
+				<g id="team">
+					<title>Team</title>
+					<rect id="teamRect" x="825" y="250" rx="10px" ry="10px" height="50px" width ="120px"/>
+					<text x="885" y="280">Team</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="1075" y1="150" x2="1075" y2="250"/>
+				</g>
+				
+				<!-- Node for content pages -->
+				<g id="contentPages">
+					<title>Content pages</title>
+					<rect id="content" x="1015" y="250" rx="10px" ry="10px" height="50px" width ="150px"/>
+					<text x="1090" y="280">Content Pages</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="1090" y1="300" x2="1090" y2="350"/>
+				</g>
+
+				<g id="ContentLine" >
+					<line x1="650" y1="350" x2="1260" y2="350" ></line>
+				</g>
+
+				<g class="line">
+					<line x1="650" y1="350" x2="650" y2="400"/>
+				</g>
+
+				<!-- Node for content page 1 -->
+				<g id="contentPage1">
+					<title>Protecting forest animals.</title>
+					<rect id="content1Rect" x="580" y="400" rx="10px" ry="10px" height="80px" width ="160px"/>
+					<text x="660" y="430">Protecting forest</text>
+					<text x="660" y="460"> animals.</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="860" y1="350" x2="860" y2="400"/>
+				</g>
+
+				<!-- Node for content page 2 -->
+				<g id="contentPage2">
+					<title>The Importance of Biodiversity Conservation</title>
+					<rect id="content2Rect" x="780" y="400" rx="10px" ry="10px" height="100px" width ="160px"/>
+					<text x="860" y="430">The Importance</text>
+					<text x="860" y="460">of Biodiversity</text>
+					<text x="860" y="490">Conservation.</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+					<line x1="1060" y1="350" x2="1060" y2="400"/>
+				</g>
+
+				<!-- Node for content page 3 -->
+				<g id="contentPage3">
+					<title>Conservation of mountain ecosystem</title>
+					<rect id="content3Rect" x="980" y="400" rx="10px" ry="10px" height="100px" width ="160px"/>
+					<text x="1060" y="430">Conservation of </text>
+					<text x="1060" y="460">mountain</text>
+					<text x="1060" y="490"> ecosystem</text>
+				</g>
+
+				<!-- Lines connecting nodes -->
+				<g class="line">
+				<line x1="1260" y1="350" x2="1260" y2="400"/>
+				</g>
+
+				<!-- Node for content page 4 -->
+				<g id="contentPage4">
+					<title>End desertification and land degradation</title>
+					<rect id="content4Rect" x="1180" y="400" rx="10px" ry="10px" height="100px" width ="160px"/>
+					<text x="1260" y="430">End desertification</text>
+					<text x="1260" y="460">and </text>
+					<text x="1260" y="490">land degradation</text>
+				</g>
+
+			</svg>
+
+			<!-- Java Script section -->
+			<script>
+
+			//Add event Listeners to navigate to the respective pages when user clicks node	
+			document.getElementById("homeRect").
+				addEventListener("click", function() {
+				document.location.href="home.html";
+			});
+			document.getElementById("gallerypage").
+				addEventListener("click", function() {
+					document.location.href="Gallery.html";
+			});
+
+			document.getElementById("shop").
+				addEventListener("click", function() {
+					document.location.href="shop.html";
+			});
+
+			document.getElementById("userProfile").
+				addEventListener("click", function() {
+					document.location.href="profile.html";
+			});
+
+			document.getElementById("feedback").
+				addEventListener("click", function() {
+					document.location.href="feedback.html";
+			});
+
+			document.getElementById("team").
+				addEventListener("click", function() {
+					document.location.href="team.html";
+			});
+
+			document.getElementById("contentPage1").
+				addEventListener("click", function() {
+					document.location.href="content_3.html";
+			});
+
+			document.getElementById("contentPage2").
+				addEventListener("click", function() {
+					document.location.href="content_4.html";
+			});
+
+			document.getElementById("contentPage3").
+				addEventListener("click", function() {
+					document.location.href="content_1.html";
+			});
+
+			document.getElementById("contentPage4").
+				addEventListener("click", function() {
+					document.location.href="content_2.html";
+			});
+
+			</script>
+
+			<!-- footer section -->
+			<hr>
+			<div class="footer">
+				<div class="footer-content">
+            		<a href="editor_1.html" target="_blank">Editor-1</a>
+            		<a href="editor_2.html" target="_blank">Editor-2</a>
+            		<a href="editor_3.html" target="_blank">Editor-3</a>
+            		<a href="editor_4.html" target="_blank">Editor-4</a>
+        		</div>
+			</div>
+		</body>
+		
+	</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <title>The Importance of Biodiversity Conservation</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            height: auto;
+        }
+
+        /*changing the background color of the navigation bar according to the background color of the page*/
+        .navbar{
+            background-color: rgb(75, 206, 92);
+        }
+
+        /* Style the main content container */
+        #contentPage{
+            height: auto;
+            margin:0 60px 30px 60px;
+            font-family:Arial, Helvetica, sans-serif;
+            padding-bottom: 80px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        /* Style the image container */
+        #img-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .images{
+            justify-content:center;
+            width:20%;
+            height:15%;
+        }
+
+        /* Style the quote contatiner */
+        #qContainer{
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #quoteB{
+            padding:20px;
+            border-radius: 10px;
+        }
+
+        #quoteButton{
+            color: rgb(0, 81, 255);
+            padding:4px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Style the quote text */
+        #quote{
+            padding:0.5%;
+            color: rgba(23, 131, 65, 0.836);
+            font-size:x-large;
+            font-family: cursive;
+        }
+
+        #quoteButton:hover{
+            background-color: rgb(51, 255, 0);
+        }
+
+        /*changing the background color of the footer according to the background color of the page*/
+        .footer{
+            height: 8px;
+            background-color: rgb(75, 206, 92);
+        }
+
+        /*changing thecolor of the text inside the <a> tag in footer according to the background color of the page*/
+        .footer .footer-content a{
+            color:rgb(3, 66, 3);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <img src="images/logo.jpg" class="logo" alt="wesite logo - two green leaves with word 'Eco hub' and 'on earth one future'">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="profile.html">USER PROFILE</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+                <li><a href="sitemap.html">SITEMAP</a></li>
+                <li><a href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div id="contentPage">
+     
+    <!-- Heading -->
+    <h1>The Importance of Biodiversity Conservation</h1>
+
+    <!-- Image container -->
+    <div id="img-container">
+        <img class="images" src="images/image3.jpg" alt="Bio-diversity on earth">
+        <!--"http://www.freepik.com">Designed by macrovector / Freepik-->
+
+        <img class="images" src="images/image4.jpg" alt="Biodiversity-Protect the balance">
+        <!--http://www.freepik.com"- Designed by stories-->
+    </div>
+
+    <!-- Quote contatiner -->
+    <div id="qContatiner">
+        <div id="quoteB">
+            <!-- Generate random quote when user clickes the button -->
+            <input id="quoteButton"   type="button" onclick="quoteGenerator();"  value="Click here to generate a quote" name="quoteBtn"/>
+        </div>
+        <div id="quote"></div>
+    </div>
+
+    <!-- Content of the web page -->
+    <p>
+        Bio-diversity on earth means the wide variety of life forms on earth including plants animals, micro-organisms and the ecosystem where they live.
+        There are several levels of biological diversity including species diversity, genetic diversity and eco-system diversity.
+        Bio diversity is the collection of all these levels.
+    </p>
+
+    <p>
+        Bio-diversity conservation means the efforts aimed to proptect prserve and manage these variety of organisms
+        and eco-system on earth to ensure the sustainable exsistence and well being  of tthose items.Bio diversity 
+        conservtion can be done by taking several steps including establishing and manging protected areas habitat 
+        re-storeation, species management, sustainable resource management,improving community engagement and also 
+        by implementing policies and regulations.
+    </p>   
+
+    <p>
+        There are several importance of bio-diversity conservation.It is important for the stability and resilience of 
+        the eco system.It means as there are variety of organisms living in a particular eco system, that eco system 
+        would have the ability to withstand disturbances like habitat distruction, climate changes, food chain 
+        disruptions and disease out breaks.As there are a collection of organisms they help for each others existence 
+        and make the eco system a better place.
+    </p>    
+
+    <p>
+        Bio diversity conservation also provide several eco system services to ensure the good health of the eco system 
+        including nutrient cycling, soil formation and improvement, clean water suply, climate regulation, flood 
+        controll and pollination.Also this may protect the important genatic resources of the organisms which would 
+        significantly essencial for the agriculture, medicine, bio-technology and also for the education feild.
+    </p>
+
+    <p>
+        Another importance is the climate change mitigation and adaptation as bio-diversity plays a significant role 
+        in regulation climatic patterns, controlling the release of green house gases and also act as a natural butter 
+        against many extreme weather events.
+    </p>
+
+    <p>
+        By studing all the above mentioned points, in conclusion it could be said that bio-diversity conservation 
+        is crusial as it place a significant role for the well being of the eco system and community.
+    </p>
+
+
+    <!-- Java Script code -->
+    <script>
+        const quotes = [
+        "'We do not inherit the Earth from our ancestors, we borrow it from our children.' - Native American proverb",
+        "'The Earth is what we all have in common, and we must preserve it for this and future generations.' - John F. Kennedy",
+        "'We must learn to live in harmony with nature, or we will perish.' - Mahatma Gandhi",
+        "'The environment is not a luxury, but a necessity for life.' - Jacques-Yves Cousteau",
+        "'Earth provides enough to satisfy every man's needs, but not every man's greed' - Mahatma Gandhi",
+        "'We are the first generation to feel the effect of climate change and the last generation who can do something about it.' - Barack Obama",
+        "'He that plants trees loves others besides himself.' - Thomas Fuller",
+        "'Earth provides enough to satisfy every man's need, but not every man's greed.' —Mohandas K. Gandhi "
+        ]
+
+        function quoteGenerator(){
+            // Genrate a random index within the range of the 'quotes' array
+            let index = Math.floor(Math.random()*quotes.length);
+
+            //Assign the value of the element at the corresponding index to the variable 'quote'
+            let quote = quotes[index];
+
+            document.getElementById("quote").textContent = quote;
+        }    
+
+    </script>
+
+    <!--Footer section -->
+    <div class="footer">
+        <div class="footer-content">
+            <a href="editor_1" target="_blank">Editor-1</a>
+            <a href="editor_2" target="_blank">Editor-2</a>
+            <a href="editor_3" target="_blank">Editor-3</a>
+            <a href="editor_4.html" target="_blank">Editor-4</a>
+        </div>
+    </div>
+    
+<!--closing the main ontent container  -->
+</div>
+
+</body>
+
+</html>

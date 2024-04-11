@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Eco hub - Gallery</title>
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url("images/backgroundImage.jpg");
+            background-size: cover;
+            background-position: center;
+            height: auto;
+            padding-bottom: 70px;
+        }
+
+        /*changing the background color of the footer according to the background image of the page*/
+        .footer{
+            display: inline;
+            background-color: rgb(7, 41, 20);
+        }
+
+        /*changing the color of the text inside <a> tags according to the background image of the page*/
+        .footer a{
+            color:green
+        }
+
+        .footer a:hover{
+            color: rgb(0, 110, 255);
+        }
+
+        /*changing the background color of the navigation bar according to the background image of the page*/
+        .navbar{
+            background-color: rgb(7, 41, 20);
+        }
+    </style>
+</head>
+
+<body >
+    <!--navigation bar-->
+    <div class="navbar">
+        <img src="images/logo.jpg" class="logo" alt="wesite logo - two green leaves with word 'Eco hub' and 'on earth one future'">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="profile.html">USER PROFILE</a></li>
+                <li><a href="feedback.html">FEEDBACK</a></li>
+                <li><a href="sitemap.html">SITEMAP</a></li>
+                <li><a href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Get color input and a font-style from user to apply to the entended view.-->
+    <div id="customize">
+        <!--color picker-->
+        <h3><i>You can customize the color and the font style of the extended view.</i></h3><br>
+        <label for="color">Choose a color: </label>
+        <input type="color" id="color" value="#ffffff">
+
+        <!--Pop up list to select font style-->
+        <div class="font">
+        <label for="fontStyle">Choose a font style: </label>
+        <select id="fontStyle">
+            <option id ="normal" value="normal" selected>Normal</option>
+            <option id="inherit" value="inherit">inherit</option>
+            <option id="italic" value="italic">Italic</option>
+            <option id="oblique" value="oblique">Oblique</option>
+        </select>
+        </div>
+    </div>
+
+    <!--Extended view -->
+    <div class="extendedView" id="fullView">
+        <p id="imageDescription"></p>
+
+        <!-- Extended image -->
+        <img src="images/fullimage1.jpg" id="fullImage" alt="Extended image">
+
+        <!-- navigation buttons -->
+        <span id="close" onclick="closeFullImage()">x</span>
+        <span id="left" onclick="goLeft()"><b>&lt;</b></span>
+        <span id="right" onclick="goRight()"><b>&gt;</b></span>
+    </div>
+
+    <!--Gallery with thumbnail images -->
+    <div class="gallery">
+        <img id="zebraThumbnail" src="images/thumbnail1.jpg" alt="Two zebras in  a forest" onclick="openFullImage(0)">
+        <!--Photo by Pixabay: https://www.pexels.com/photo/zebras-on-zebra-247376/-->
+        <img src="images/thumbnail2.jpg" alt="A leopard on a brown trunk tree" onclick="openFullImage(1)" >
+        <!--Photo by Pixabay: https://www.pexels.com/photo/leopard-on-brown-trunk-tree-46254/-->
+        <img src="images/thumbnail3.jpg" alt="Herd of elephants near a river during daytime" onclick="openFullImage(2)">
+        <!--Photo by Pixabay: https://www.pexels.com/photo/gray-elephants-near-body-of-water-during-daytime-52717/-->
+        <img src="images/thumbnail4.jpg" alt="Monkey on tree branch" onclick="openFullImage(3)">
+        <!--Photo by DSD: https://www.pexels.com/photo/close-up-photo-of-monkey-on-tree-branch-1829979/-->
+        <img src="images/thumbnail5.jpg" alt="Two rhinos eating grass" onclick="openFullImage(4)">
+        <!--Photo by Frans van Heerden: https://www.pexels.com/photo/two-rhino-on-gray-field-631292/-->
+        <img src="images/thumbnail6.jpg" alt="Brown and black butterfly perched on yellow and red petaled flower" onclick="openFullImage(5)">
+        <!--Photo by Leonardo Jarro: https://www.pexels.com/photo/brown-and-black-butterfly-perched-on-yellow-and-red-petaled-flower-closeup-photography-633437/-->
+        <img src="images/thumbnail7.jpg" alt="Group of penguins on ice" onclick="openFullImage(6)">
+        <!--Photo by Pixabay: https://www.pexels.com/photo/group-of-penguins-on-ice-46235/-->
+        <img src="images/thumbnail8.jpg" alt="Two antilopes in a green field" onclick="openFullImage(7)">
+        <!--Photo by David Rama: https://www.pexels.com/photo/two-brown-deer-535431/-->
+        <img src="images/thumbnail9.jpg" alt="Two pink flamingos in a river" onclick="openFullImage(8)">
+        <!--Photo by Summer Li: https://www.pexels.com/photo/pink-flamingos-584498/-->
+        <img src="images/thumbnail10.jpg" alt="A snail" onclick="openFullImage(9)">
+        <!--Photo by Alexas Fotos: https://www.pexels.com/photo/close-up-photo-of-snail-7071021/-->
+        <img src="images/thumbnail11.jpg" alt="Brown owl on tree branch" onclick="openFullImage(10)">
+        <!--Photo by Erik Karits: https://www.pexels.com/photo/brown-owl-on-tree-branch-3738688/-->
+        <img src="images/thumbnail12.jpg" alt="Green frog on a tree" onclick="openFullImage(11)">
+        <!--Photo by Davidson Free Media: https://www.pexels.com/photo/green-frog-on-green-gross-3880166/-->
+        <img src="images/thumbnail13.jpg" alt="Pinus forest" onclick="openFullImage(12)">
+        <!--Photo by Rudolf Jakkel: https://www.pexels.com/photo/green-grass-on-forest-418831/-->
+        <img src="images/thumbnail14.jpg" alt="Clouds over a forest in mountains." onclick="openFullImage(13)">
+        <!--Photo by Ton Souza: https://www.pexels.com/photo/clouds-over-forest-on-mountains-4613176/-->
+        <img src="images/thumbnail15.jpg" alt="Stream in a forset" onclick="openFullImage(14)">
+        <!--Photo by Be The Observer: https://www.pexels.com/photo/rocks-on-stream-in-forest-17589255/-->
+        <img src="images/thumbnail16.jpg" alt="Scenic view of mountain under cloudy sky" onclick="openFullImage(15)">
+        <!--Photo by Rido Alwarno: https://www.pexels.com/photo/scenic-view-of-mountain-under-cloudy-sky-1581026/-->
+        <img src="images/thumbnail17.jpg" alt="River in a forest" onclick="openFullImage(16)">
+        <!--Photo by Snow White: https://www.pexels.com/photo/river-between-green-leaf-trees-at-daytime-884186/-->
+        <img src="images/thumbnail18.jpg" alt="Group of mountains" onclick="openFullImage(17)">
+        <!--Photo by eberhard grossgasteiger: https://www.pexels.com/photo/white-and-black-mountain-640947/-->
+        <img src="images/thumbnail19.jpg" alt="River in forest during golden hour" onclick="openFullImage(18)">
+        <!--Photo by Sindre Fs: https://www.pexels.com/photo/aerial-photography-of-water-beside-forest-during-golden-hour-1144176/-->
+        <img src="images/thumbnail20.jpg" alt="solar modules on green field" onclick="openFullImage(19)">
+        <!--Photo by Kelly: https://www.pexels.com/photo/solar-modules-on-green-field-in-photovoltaic-station-4320473/-->
+        <img src="images/thumbnail21.jpg" alt="Wind turbines in field." onclick="openFullImage(20)">
+        <!--Photo by Talal Hakim: https://www.pexels.com/photo/wind-turbines-in-field-against-blue-sky-4727390/-->
+        <img src="images/thumbnail22.jpg" alt="Air pollution." onclick="openFullImage(21)">
+        <!--Photo by Marcin Jozwiak: https://www.pexels.com/photo/white-smoke-coming-out-from-a-building-3641377/-->
+        <img src="images/thumbnail23.jpg" alt="A truck carrying timber" onclick="openFullImage(22)">
+        <!--Photo by Pok Rie: https://www.pexels.com/photo/aerial-photo-of-truck-carrying-timber-3374066/-->
+        <img src="images/thumbnail24.jpg" alt="A river." onclick="openFullImage(23)">
+        <!--Photo by Yogendra  Singh: https://www.pexels.com/photo/body-of-water-2480797/-->
+        <img src="images/thumbnail25.jpg" alt="a polluted river near houses" onclick="openFullImage(24)">
+        <!--Photo by Tom Fisk: https://www.pexels.com/photo/photo-of-a-polluted-river-near-houses-5412977/-->
+        <img src="images/thumbnail26.jpg" alt="Crusher machine in open pit" onclick="openFullImage(25)">
+        <!--Photo by Piotr Arnoldes: https://www.pexels.com/photo/crusher-machine-in-open-pit-6109673/-->
+        <img src="images/thumbnail27.jpg" alt="A truck loaded with timber" onclick="openFullImage(26)">
+        <!--Photo by Wilhelm Grantler: https://www.pexels.com/photo/freight-train-platforms-loaded-with-timber-at-a-sawmill-station-17054697/-->
+        <img src="images/thumbnail28.jpg" alt="Degraded land" onclick="openFullImage(27)">
+        <!--Photo by James Frid: https://www.pexels.com/photo/withered-ground-1097016/-->
+        <img src="images/thumbnail29.jpg" alt="Protect earth" onclick="openFullImage(28)">
+        <!--Photo by Artem Podrez: https://www.pexels.com/photo/paper-cutouts-on-a-gray-surface-7048023/-->
+        <img src="images/thumbnail30.jpg" alt="A person holding a green plant" onclick="openFullImage(29)">
+        <!--Photo by Akil  Mazumder: https://www.pexels.com/photo/person-holding-a-green-plant-1072824/-->
+    </div>
+
+    <!-- External Java Script file -->
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <a href="editor_1.html" target="_blank">Editor-1</a>
+            <a href="editor_2.html" target="_blank">Editor-2</a>
+            <a href="editor_3.html" target="_blank">Editor-3</a>
+            <a href="editor_4.html" target="_blank">Editor-4</a>
+        </div>
+    </div>
+
+</body>
+</html>
