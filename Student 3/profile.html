@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="additional_student-2.css">
+    
+
+
+
+</head>
+
+<body >
+
+    <div class="navbar">
+        <img src="logo.jpg" alt="logo of the website" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Content3.html">HOME</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="profile.html">USER PROFILE</a></li>
+                <li><a href="">FEEDBACK</a></li>
+                <li><a href="">SITEMAP</a></li>
+                <li><a href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="profileInformation">
+        <h1>User Profile Information</h1>
+    </div>
+        
+    <div >
+        
+        <div class="prompt" id="prompt0">
+            <br><br>
+            <h2 class="start">Start building your profile.</h2>
+            <br>
+            <br>
+            <button class="btn" onclick="nextPrompt()" >Start</button>
+            <br>
+        </div>
+
+
+        <div class="prompt" id="prompt1">
+            <h3 class="step">STEP 1 | Personal Details</h3>
+            <br><br>
+            <p>Enter your name:</p>
+            <input type="text" id="name" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+
+        <div class="prompt" id="prompt2">
+            <h3 class="step">STEP 1 | Personal Details</h3>
+            <br><br>
+            <p>Enter your surname:</p>
+            <input type="text" id="surname" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+
+        <div class="prompt" id="prompt3">
+            <h3 class="step">STEP 1 | Personal Details</h3>
+            <br><br>
+            <p>Choose a username:</p>
+            <input type="text" id="username" maxlength="10" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+
+        <div class="prompt" id="prompt4">
+            <h3 class="step" >STEP 1 | Personal Details</h3>
+            <br><br>
+            <p>Enter your age:</p>
+            <input type="number" id="age" min="18" max="60" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+    </div>
+    
+
+    <div >
+        <div class="prompt" id="prompt5">
+            <h3 class="step">STEP 2 | Voluntary Tasks</h3>
+            <br><br>
+            <p>What led you to support this cause?</p>
+            <textarea id="rational" ></textarea >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+
+        <div class="prompt" id="prompt6">
+            <h3 class="step">STEP 2 | Voluntary Tasks</h3>
+            <br><br>
+            <p>Tasks you are interested in helping with:</p>
+            <input type="text" id="task" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+
+        <div class="prompt" id="prompt7">
+            <h3 class="step">STEP 2 | Voluntary Tasks</h3>
+            <br><br>
+            <p>Places you are willing to volunteer:</p>
+            <input type="text" id="place" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+
+        <div class="prompt" id="prompt8" style="display: none;">
+            <h3 class="step">STEP 2 | Voluntary Tasks</h3>
+            <br><br>
+            <p>Minimum hours per week:</p>
+            <input type="number" id="hours" min="1" max="63" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div>
+    </div>
+
+    <div >
+        <div class="prompt" id="prompt9">
+            <h3 class="step">STEP 3 | Qualifications</h3>
+            <br><br>
+            <p>Main field of study:</p>
+            <input type="text" id="mainField" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div> 
+
+        <div class="prompt" id="prompt10">
+            <h3 class="step">STEP 3 | Qualifications</h3>
+            <br><br>
+            <p>Highest degree:</p>
+            <input type="text" id="degree" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div> 
+
+        <div class="prompt" id="prompt11">
+            <h3 class="step">STEP 3 | Qualifications</h3>
+            <br><br>
+            <p>Enter your university/institution:</p>
+            <input type="text" id="university">
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div> 
+
+        <div class="prompt" id="prompt12">
+            <h3 class="step">STEP 3 | Qualifications</h3>
+            <br><br>
+            <p>Enter the completion year:</p>
+            <input type="text" id="completionYear" pattern="[0-9]{4}" maxlength="4" placeholder="YYYY" required>
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div> 
+
+        <div class="prompt" id="prompt13">
+            <h3 class="step">STEP 3 | Qualifications</h3>
+            <br><br>
+            <p>Country:</p>
+            <input type="text" id="country" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div> 
+    </div>    
+    
+    <div >
+        <div class="prompt" id="prompt14">
+            <h3 class="step">STEP 4 | Contact Details</h3>
+            <br><br>
+            <p>Enter your address:</p>
+            <textarea id="address" ></textarea >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div> 
+
+        <div class="prompt" id="prompt15">
+            <h3 class="step">STEP 4 | Contact Details</h3>
+            <br><br>
+            <p>Enter your telephone number::</p>
+            <input type="tel" id="tel" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt()" >Next</button>
+        </div> 
+
+        <div class="prompt" id="prompt16">
+            <h3 class="step">STEP 4 | Contact Details</h3>
+            <br><br>
+            <p>Enter your email:</p>
+            <input type="email" id="email" >
+            <br><br>
+            <button class="btn" onclick="prevPrompt()" >Previous</button>
+            <button class="btn" onclick="nextPrompt();" >Next</button>
+        </div>
+       
+
+        <div class="prompt" id="prompt17">
+            <h3 class="step">STEP 4 | Contact Details</h3>
+            <br><br>
+            <p>Agree with privacy terms and conditions.</p>
+            <br>
+            <label><input type="radio" name="privacy-agreement" value="yes" > Yes</label>
+            <label><input type="radio" name="privacy-agreement" value="no" > No</label>
+            <br><br>
+            <button class="btn" onclick="prevPrompt()">Previous</button>
+            <button class="btn" onclick="submitProfile()">Submit</button>
+        </div>
+    </div>                
+
+        
+    
+    <div class="progress-container" id="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="progress-text" id="progressText" >Profile completed: </div>
+    </div>
+
+    <br><br>
+
+    <div class="userProfile">
+        <h2 class="profileHeading" id="profileHeading" style="display: none;">User Profile</h2>
+        <div  class ="output" id="output1" style="display: none;">
+            
+            <br>
+            <h3 class="topic">Personal Details</h3>
+            <p id ="personName"></p>
+            <p id="personSurname"> </p>
+            <p id="personUsername"></p>
+            <p id="personAge"></p>  
+        </div>
+
+        <div  class ="output" id="output2" style="display: none;">
+            <h3 class="topic">Volunteering Tasks</h3>
+            <p id ="personRational"></p>
+            <p id="personTask"> </p>
+            <p id="personPlace"></p>
+            <p id="personHours"></p>
+        </div>
+
+        <div  class ="output" id="output3" style="display: none;">
+            <h3 class="topic">Qualifications</h3>
+            <p id ="personMainfield"></p>
+            <p id="personDegree"> </p>
+            <p id="personUniversity"></p>
+            <p id="personCompletionYear"></p>
+            <p id="personCountry"></p>
+        </div>
+
+        <div  class ="output" id="output4" style="display: none;">
+            <h3 class="topic">Contact Details</h3>
+            <p id ="personAddress"></p>
+            <p id="personTel"> </p>
+            <p id="personEmail"></p>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <a href="">Editor-1</a>
+            <a href="">Editor-2</a>
+            <a href="pageEditor3.html" target="_blank">Editor-3</a>
+            <a href="">Editor-4</a>
+        </div>
+    </footer>
+    
+    
+
+<script  src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team Members</title> 
+        <link rel="stylesheet" href="additional_student-2.css">
+
+        <style>
+            body{
+                background-image: url('back.jpg') ;
+                background-size: cover; /* Adjust as needed */
+                background-repeat: no-repeat; /* Adjust as needed */
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+                
+                
+            }
+
+            
+        
+            .teamContainer{
+                display: flex;
+                justify-content: center; /* Horizontal centering */
+                align-items: center; /* Vertical centering */
+                height: 50vh; /* Ensure full viewport height */
+                
+            }
+        
+            .team{
+                color: #205739;
+                margin: 2%;
+                text-align: center;
+                text-decoration-line: underline;
+                font-size: 40px;
+        
+            }
+            .team-member {
+                display: inline-block;
+                margin: 35px;
+                position: relative;
+                
+        
+            }
+            .team-member img {
+                width: 280px;
+                height: auto;
+                transition: transform 0.3s ease-in-out;
+                border:#205739 2px;
+                
+            }
+            .team-member:hover img {
+                transform: scale(1.3);
+                
+            }
+            .team-member .details {
+                position: absolute;
+                background: rgba(3, 80, 45, 0.83);
+                color: #fff;
+                padding: 10px;
+                height: 130px;
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: transform 0.3s ease-in-out;
+            }
+            .team-member:hover .details {
+                transform: scaleY(1);
+                
+            }
+        
+            h2{
+                text-align: center;
+        
+            }
+        
+            .image{
+                border-width: 2px;
+                border-color: #fff;
+                
+            }
+
+            
+        
+        </style>
+
+    </head>
+    <body>
+        
+        
+    <div class="navbar">
+        <img src="logo.jpg" alt="logo of the website" class="logo">
+        <nav>
+            <ul>
+                <li><a href="Content3.html">HOME</a></li>
+                <li><a href="">GALLERY</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="profile.html">USER PROFILE</a></li>
+                <li><a href="">FEEDBACK</a></li>
+                <li><a href="">SITEMAP</a></li>
+                <li><a href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="team"> Our Team </h1>
+
+    <div class="teamContainer">
+
+        <div class="team-member">
+            <img src="thrishali.jpg" alt="Team Member 1" class="image">
+            <div class="details">
+                <h2>Thrishali Gamage </h2>
+                <p>Role: Student 1</p>
+                <p>Design and implemented pages: Splash Screen | Shop </p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="sanali.jpg" alt="Team Member 2" class="image">
+            <div class="details">
+                <h2>Sanali Ranasingha</h2>
+                <p>Role: Student 2</p>
+                <p>Design and implemented pages: Home Page | Feedback </p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="tharushi.jpg" alt="Team Member 3" class="image">
+            <div class="details">
+                <h2>Tharushi Dimalsha</h2>
+                <p>Role: Student 3</p>
+                <p>Design and implemented pages: User Profile | Team </p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="malsha.jpg" alt="Team Member 4" class="image">
+            <div class="details">
+                <h2>Malsha Gamage</h2>
+                <p>Role: Student 4</p>
+                <p>Design and implemented pages: Gallery | Sitemap </p>
+            </div>
+        </div>
+
+    </div>    
+
+    <footer>
+        <div class="footer-content">
+            <a href="">Editor-1</a>
+            <a href="">Editor-2</a>
+            <a href="pageEditor3.html" target="_blank">Editor-3</a>
+            <a href="">Editor-4</a>
+        </div>
+    </footer>
+    
+           
+    </body>
+</html>
