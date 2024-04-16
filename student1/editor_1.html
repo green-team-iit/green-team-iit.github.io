@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Editor 1</title>
+        
+        <style>
+            body{
+                background-color: rgb(46, 116, 57);
+            }
+
+            h1{
+                text-align: center;
+                color: rgb(248, 250, 248);
+            }
+            h3,p{
+                color: azure;
+            }
+
+            .info{
+                text-align: center;
+                background-color: rgb(144, 202, 132);
+                padding: 20px;  
+            }
+
+            .splashScreen, .Shop, .checkout, .content{
+                text-align: center;
+            }
+
+            a{
+                text-align: center;
+                color: rgb(122, 228, 136);
+                
+            }
+            /* nav bar and footer*/
+
+            .logo{
+                width: 100px;
+                height: 80px;
+                margin: 0;
+                cursor: pointer;
+                margin-left: 30px;
+            }
+
+            .navbar{
+                width: 100%;
+                margin: auto;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                background-color: black;
+                justify-content: space-between;
+            }
+
+            nav{
+                flex: 1;
+                text-align: center;
+            }
+
+            nav ul li{
+                list-style: none;
+                display: inline-block;
+                margin-left: 80px;
+                position: relative;
+            }
+
+            nav ul li a{
+                text-decoration: none;
+                color: #329600;
+                font-size: 15px;
+            }
+
+            nav ul li::after{
+                content: '';
+                height: 3px;
+                width: 0;
+                background: #329600;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                transition: 0.5s;
+            }
+
+            nav ul li:hover::after{
+                width: 100%;
+            }
+
+            section{
+                padding: 20px;
+            }
+
+            .footer{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+                gap: 20rem;
+                background: black;
+                position: fixed;
+                text-align:center;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
+            .footer-content a {
+                display: inline-block;
+                font-size: 20px;
+                color: #80b167b6;
+                margin-left: 30px;
+                transition: all .40s ease;
+            }
+
+            .footer-content a:hover{
+                color:  #ecf409cf;
+                transform: translateY(-5px);
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="navbar">
+            <img src="img/logo.jpg" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="shop.html">SHOP</a></li>
+                    <li><a href="profile.html">USER PROFILE</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                    <li><a href="sitemap.html">SITEMAP</a></li>
+                    <li><a href="team.html">TEAM</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1> Page Editor</h1>
+
+        <hr>
+
+        <div class="info">
+            Name: Thrishali Gamage <br>
+            Role: Student 1   <br>
+            The following pages were edited by me!
+
+        </div>
+
+        <hr>
+
+        <div class="edit">
+
+            <div class="splashScreen">
+                <h3>Splash Screen</h3>
+                <p>Created a splash Screen with images using html, css and javaScript.<br>
+                    Added a timmer with using javaScript
+                </p>
+                <a href="index.html"> Link to Splash Screen</a>
+            </div>
+
+            <div class="Shop">
+                <h3>Shop</h3>
+                <p>Created the Shop from using html, Css, javaScript . <br>
+                </p>
+                <a href="shop.html"> Link to Shop</a>
+
+            </div>
+            <div class="checkout">
+                <h3>Checkout page</h3>
+                <p>Created the checkout page  using html, Css, javaScript . <br>
+                </p>
+                <a href="checkout.html"> Link to Checkout</a>
+
+            </div>
+
+            <div class="content">
+                <h3>content Page</h3>
+                <p>Created a content page uder the topic of Eco hub. <br>
+                    Added images <br>
+
+                </p>
+                <a href="content_1.html">Link to Content page</a> <br><br>
+
+                
+                
+            </div>
+        </div> 
+        <section class="footer">
+            <div class="footer-content">
+                <a href="editor_1.html">Editor-1</a>
+                <a href="">Editor-2</a>
+                <a href="">Editor-3</a>
+                <a href="">Editor-4</a>
+            </div>
+        </section>   
+ 
+    </body>
+
+   
+</html>    
